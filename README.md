@@ -1,3 +1,3 @@
-# Student Management Application
+# Student Task Management System
 
-This Application helps to manage the students
+This application helps students keep track of their assignment, projects, and daily tasks efficiently.
