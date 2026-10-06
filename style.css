@@ -102,4 +102,65 @@ body {
         padding: 20px;
     }
 }
-//Hello everyone
+
+/* ==========================================
+   Mobile Responsive Layout (max-width: 600px)
+   ========================================== */
+@media (max-width: 600px) {
+  /* Prevent horizontal scroll across the container */
+  body, .container {
+    width: 100%;
+    overflow-x: hidden;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Stack form elements vertically */
+  #task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  /* Full width inputs with comfortable touch targets */
+  #task-title,
+  #task-desc,
+  #task-form button {
+    width: 100%;
+    min-height: 44px; /* Minimum recommended touch target size */
+    font-size: 16px;  /* Prevents auto-zoom on mobile browsers */
+    box-sizing: border-box;
+  }
+
+  /* Task cards container and card layout */
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .task-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Stack card action buttons horizontally or full width */
+  .task-actions {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .task-actions button {
+    flex: 1;
+    min-height: 40px;
+    font-size: 14px;
+  }
+}
