@@ -1,166 +1,42 @@
-/* General Page Styling & Centering */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
+  background-color: #0b0e14;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 30px 30px, 30px 30px;
+  color: #f8fafc;
+  font-family: 'Arial', system-ui, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
-
-/* Form Container Card */
-.task-form {
-    background-color: #ffffff;
-    padding: 28px 32px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    width: 100%;
-    max-width: 450px;
-    box-sizing: border-box;
+h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #00f0ff, #7000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 50px;
+  font-family: 'Arial', sans-serif;
 }
-
-.task-form h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #2c3e50;
-    font-size: 1.5rem;
-    font-weight: 600;
-    border-bottom: 2px solid #eef2f5;
-    padding-bottom: 10px;
+.task-card {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
 }
-
-/* Form Group & Input Controls */
-.form-group {
-    margin-bottom: 18px;
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group label {
-    margin-bottom: 6px;
-    color: #4a5568;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.form-group input[type="text"],
-.form-group textarea {
-    width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #cbd5e1;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    font-family: inherit;
-    color: #334155;
-    background-color: #f8fafc;
-    box-sizing: border-box;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 90px;
-}
-
-/* Focus States */
-.form-group input[type="text"]:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #3b82f6;
-    background-color: #ffffff;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
-}
-
-/* Button Styling */
-#add-task-btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #3b82f6;
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-#add-task-btn:hover {
-    background-color: #2563eb;
-}
-
-#add-task-btn:active {
-    transform: scale(0.98);
-}
-
-/* Responsive Scaling for Small Screens */
-@media (max-width: 480px) {
-    .task-form {
-        padding: 20px;
-    }
-}
-
-/* ==========================================
-   Mobile Responsive Layout (max-width: 600px)
-   ========================================== */
-@media (max-width: 600px) {
-  /* Prevent horizontal scroll across the container */
-  body, .container {
-    width: 100%;
-    overflow-x: hidden;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  /* Stack form elements vertically */
-  #task-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-  }
-
-  /* Full width inputs with comfortable touch targets */
-  #task-title,
-  #task-desc,
-  #task-form button {
-    width: 100%;
-    min-height: 44px; /* Minimum recommended touch target size */
-    font-size: 16px;  /* Prevents auto-zoom on mobile browsers */
-    box-sizing: border-box;
-  }
-
-  /* Task cards container and card layout */
-  .task-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 0;
-  }
-
-  .task-card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 14px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* Stack card action buttons horizontally or full width */
-  .task-actions {
-    display: flex;
-    width: 100%;
-    gap: 8px;
-    margin-top: 10px;
-  }
-
-  .task-actions button {
-    flex: 1;
-    min-height: 40px;
-    font-size: 14px;
-  }
+.task-card:hover {
+  border-color: rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+  transform: translateY(-2px);
 }
