@@ -212,22 +212,19 @@ The application can also be opened using the Live Server extension in Visual Stu
 
 Main Interface
 
-Add a screenshot of the Student Task Manager interface here.
 
 ![Student Task Manager](screenshots/main-interface.png)
+
 Task Management Interface
 
-Add a screenshot showing the task management section.
+
 
 ![Task Management](screenshots/task-manager.png)
-GitHub Repository
 
-Add a screenshot showing the GitHub repository and branches.
 
-![GitHub Repository](screenshots/github-repository.png)
+
+
 Pull Request
-
-Add a screenshot showing the Pull Request and merge process.
 
 ![Pull Request](screenshots/pull-request.png)
 
@@ -237,12 +234,7 @@ Add a screenshot showing the Pull Request and merge process.
 
 | Version | Description                               |
 | ------- | ----------------------------------------- |
-| v0.1    | Initial project structure created         |
-| v0.2    | Added HTML structure                      |
-| v0.3    | Added CSS styling                         |
-| v0.4    | Improved task manager interface           |
-| v0.5    | Collaborative GitHub workflow implemented |
-| v1.0    | Final project version                     |
+| v1.0    | New Tag                     |
 
 
 # 👨‍💻 Contributors
