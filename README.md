@@ -56,23 +56,33 @@ The project follows a feature-branch based Git workflow.
 ### Basic Workflow
 
 ```text
-Clone Repository
+ Create Project
        ↓
-Create Feature Branch
+ Initialize Git
        ↓
-Make Changes
+ Create Commits
        ↓
-git add
+ Create GitHub Repository
        ↓
-git commit
+ Create Branches
        ↓
-git push
+ Develop Features
        ↓
-Create Pull Request
+ Push Branches
        ↓
-Review Changes
+ Create Issues
        ↓
-Merge into Main
+Create Pull Requests
+       ↓
+ Code Review
+       ↓
+     Merge
+       ↓
+Create and Resolve Merge Conflict
+       ↓
+Use Git Recovery Commands
+       ↓
+Create Tag and Release
 ```
 
 ---
