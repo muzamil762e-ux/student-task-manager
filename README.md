@@ -20,7 +20,7 @@ The project  demonstrates the practical use of **Git and GitHub collaborative de
 
 | Name | Role |
 |------|------|
-| Muhammad Muzamil | Project Lead / HTML / GitHub Repo Management |
+| Muhammad Muzam | Project Lead / HTML / GitHub Repo Management |
 | Ahtisham Ur Rehman | CSS / UI Styling / Git Collaboration |
 
 ---
